@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">Let's Get Some <span class="text-cyan-600 font-semibold">Money</span></h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-400 rounded p-8">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h3 class="text-5xl">$<span id="add-deposit">00</span></h3>
+                </div>
+                <div class="bg-teal-400 rounded p-8">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h3 class="text-5xl">$<span id="add-balance">12000</span></h3>
+                </div>
+                <div class="bg-stone-400 rounded p-8">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h3 class="text-5xl">$<span id="add-withdraw">00</span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-zinc-400 p-8 rounded">
+                    <h3 class="text-3xl mb-4">Please Deposit</h3>
+                    <div>
+                        <input id="deposit-input" class="block border w-3/4 rounded mb-4 px-2" type="email" name="" id="" placeholder="$ deposit amount">
+                        <button id="deposit-btn" type="submit" class="bg-sky-600 text-white font-semibold px-4 py-2 border rounded">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-indigo-200 p-8 rounded">
+                    <h3 class="text-3xl mb-4">Please Withdraw</h3>
+                    <div>
+                        <input id="withdraw-input" class="block border w-3/4 rounded mb-4 px-2" type="email" name="" id="" placeholder="$ withdraw amount">
+                        <button id="withdraw-btn" type="submit" class="bg-sky-600 text-white font-semibold px-4 py-2 border rounded">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+</html>
